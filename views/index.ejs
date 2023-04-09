@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-
-<body>
+<%-include("header.ejs")-%>
     <div class="box" id="heading">
         <h1 style="color: #000;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
             <%= date%>
@@ -33,12 +22,4 @@
                     <button type="submit">+</button>
                 </form>
     </div>
-    <center>
-    <div class="footer">
-        <h2 style="color:azure">Write the tasks-to-do in the given space and click '+'.<br>Use checkbox to strike-off done task.</h2>
-       <br><br><br> <h3 style="color:azure">Made by Soubhik Gon.</h3>
-    </div>
-</center>
-</body>
-
-</html>
+    <%-include("footer.ejs")-%>

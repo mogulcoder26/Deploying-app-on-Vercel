@@ -60,6 +60,9 @@ input:checked+p {
   text-decoration-color: #A683E3;
 }
 
+.checker{
+  text-decoration: line-through;
+}
 
 input[type="checkbox"] {
   margin: 20px;
@@ -124,4 +127,7 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+a{
+  font-size: 1.5rem;
 }
