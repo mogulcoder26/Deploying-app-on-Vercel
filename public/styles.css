@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fasthand&family=Lora:ital,wght@0,600;1,500&family=Montserrat&family=Nanum+Gothic+Coding:wght@400;700&family=Open+Sans&family=Poppins:wght@200;500&family=Sacramento&family=Source+Code+Pro:wght@600&family=Ubuntu:wght@400;700&display=swap');
+
+html {
+  background-color: #E4E9FD;
+  background-color: rgb(35, 34, 34);
+
+  min-height: 800px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-image:url('type2.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+#heading:hover{
+  transition: 0.3s;
+  background-image:url('best.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item {
+  transition: 0.3s;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+  /* background-image:url('best.svg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.item:hover{
+  transition: 0.3s;
+  /* background-image:url('type2.svg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: rgb(94, 91, 91);
+}
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}
+
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #000000;
+}
+.item:hover p{
+  transition: 0.3s;
+  font-size: 30px;
+}
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  color: rgb(86, 82, 82);
+  opacity: 1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+
+input[type="text"]:hover ::placeholder{
+  font-size: 20px;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
