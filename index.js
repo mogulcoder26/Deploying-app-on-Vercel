@@ -1,9 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const {join}=require('path')
 // const PORT = 5000;
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
-app.set('views','./views');
+app.set('views',join(__dirname,'./views'));
 app.set("view engine", "ejs");
 
 var upc_task = "";
