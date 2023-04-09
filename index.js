@@ -31,9 +31,15 @@ app.get('/', (req, res) => {
     res.render("index", { date: today,dateformat:dateformat, newitem: listnew })
 })
 app.post('/', (req, res) => {
-    listnew.push(req.body.upcomingtask);
-    console.log('post req');
-    res.redirect('/');
+    if(req.body.upcomingtask){
+        listnew.push(req.body.upcomingtask);
+        console.log('post req');
+        res.redirect('/');
+    }
+    else{
+        console.log('Please enter a valid Task!')
+        res.redirect('/')
+    }
 })
 
 
