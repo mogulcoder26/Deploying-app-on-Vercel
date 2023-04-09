@@ -19,9 +19,15 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-    listnew.push(req.body.upcomingtask);
-    console.log('post req');
-    res.redirect('/');
+    if(req.body.upcomingtask){
+        listnew.push(req.body.upcomingtask);
+        console.log('post req');
+        res.redirect('/');
+    }
+    else{
+        console.log('Please enter a valid Task!')
+        res.redirect('/')
+    }
 })
 
 app.listen(process.env.PORT||3000, () => {
