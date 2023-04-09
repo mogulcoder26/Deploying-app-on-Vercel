@@ -25,7 +25,7 @@ var objToday = new Date(),
 	curMeridiem = objToday.getHours() > 12 ? " PM" : " AM";
     var today = curHour + ":" + curMinute + "." + curSeconds + curMeridiem;
     var dateformat= dayOfWeek + "," + dayOfMonth + " of " + curMonth +"," + curYear;
-app.use(express.static('./public'));
+app.use('/',express.static(__dirname+'/public'));
 
 app.get('/', (req, res) => {
     res.render("index", { date: today,dateformat:dateformat, newitem: listnew })
