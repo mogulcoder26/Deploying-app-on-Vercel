@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const PORT = 5000;
+// const PORT = 5000;
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -37,6 +37,6 @@ app.post('/', (req, res) => {
 
 
 
-app.listen(PORT, () => {
-    console.log(`Server live @ ${PORT}`)
+app.listen(process.env.PORT||3000, () => {
+    console.log(`Server live at localhost:3000 as well as @heroku`)
 })
